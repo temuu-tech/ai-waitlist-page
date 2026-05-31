@@ -7,8 +7,9 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'NEURAL — AI That Understands You',
-  description: 'Join the waitlist for the next generation of AI. Limited to 500 early access spots.',
+  title: 'Oggy — Train your English under pressure',
+  description:
+    'A stress inoculation system for non-native English speakers. Real-time AI scenarios that train your reflexes — not just your vocabulary. Join the waitlist: first 500 get early access + founding price.',
   generator: 'v0.app',
   icons: {
     icon: [

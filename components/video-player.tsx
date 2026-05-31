@@ -24,7 +24,7 @@ export function VideoPlayer() {
       {/* Video label */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
         <span className="text-xs text-muted-foreground tracking-widest uppercase">
-          Watch Demo
+          Watch the Ghost Replay
         </span>
       </div>
     </div>
