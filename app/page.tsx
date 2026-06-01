@@ -71,8 +71,91 @@ export default async function WaitlistPage() {
         </div>
       </div>
 
-      {/* Ghost Replay hook */}
+      {/* False Fluency — named concept */}
       <section className="relative z-10 w-full max-w-2xl mx-auto mt-24 border-t border-border pt-16">
+        <span className="text-[10px] font-medium tracking-[0.25em] text-muted-foreground uppercase">
+          The real problem
+        </span>
+        <h2 className="text-2xl md:text-3xl font-bold tracking-tight mt-4 mb-6 text-balance leading-tight">
+          It&apos;s called False Fluency.
+        </h2>
+        <div className="flex flex-col gap-4 text-base md:text-lg text-pretty leading-relaxed">
+          <p className="text-muted-foreground">
+            You pass the exams. You know the vocabulary. You understand every
+            word in the meeting.
+          </p>
+          <p className="text-muted-foreground">
+            Then someone asks you a question. And everything disappears.
+          </p>
+          <p className="text-foreground">
+            Not because you don&apos;t know English. Because pressure changes
+            performance. Oggy measures what happens in that exact moment — and
+            trains it until it stops happening.
+          </p>
+        </div>
+      </section>
+
+      {/* Before / After transformation */}
+      <section className="relative z-10 w-full max-w-2xl mx-auto mt-16 border-t border-border pt-16">
+        <span className="text-[10px] font-medium tracking-[0.25em] text-muted-foreground uppercase">
+          The transformation
+        </span>
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {/* Before */}
+          <div className="border border-border rounded-lg p-6 bg-card">
+            <span className="text-xs font-medium tracking-widest uppercase text-muted-foreground/60">
+              Before Oggy
+            </span>
+            <ul className="mt-4 flex flex-col gap-2.5">
+              {[
+                "Meeting starts",
+                "Question asked",
+                "Pause",
+                "Silent translation",
+                "Panic",
+                "Conversation moves on without you",
+              ].map((step, i) => (
+                <li
+                  key={i}
+                  className="text-sm text-muted-foreground leading-relaxed"
+                >
+                  {step}
+                </li>
+              ))}
+            </ul>
+          </div>
+          {/* After */}
+          <div className="border border-foreground/20 rounded-lg p-6 bg-card">
+            <span className="text-xs font-medium tracking-widest uppercase text-foreground/80">
+              After Oggy
+            </span>
+            <ul className="mt-4 flex flex-col gap-2.5">
+              {[
+                "Question asked",
+                "Response starts immediately",
+                "No silent translation",
+                "Conversation continues",
+                "You stay in the room",
+                "Confidence stays intact",
+              ].map((step, i) => (
+                <li
+                  key={i}
+                  className="text-sm text-foreground leading-relaxed"
+                >
+                  {step}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <p className="text-sm text-muted-foreground/70 mt-6 text-pretty leading-relaxed">
+          People don&apos;t buy architectures. They buy transformations. This is
+          the one Oggy is built to deliver.
+        </p>
+      </section>
+
+      {/* Ghost Replay hook */}
+      <section className="relative z-10 w-full max-w-2xl mx-auto mt-16 border-t border-border pt-16">
         <span className="text-[10px] font-medium tracking-[0.25em] text-muted-foreground uppercase">
           The Ghost Replay
         </span>
@@ -85,6 +168,51 @@ export default async function WaitlistPage() {
           That&apos;s the Ghost Replay. It&apos;s the feature nobody else has
           built. Because nobody else is building this.
         </p>
+      </section>
+
+      {/* ICP — self identify */}
+      <section className="relative z-10 w-full max-w-2xl mx-auto mt-16 border-t border-border pt-16">
+        <span className="text-[10px] font-medium tracking-[0.25em] text-muted-foreground uppercase">
+          Built for you if you
+        </span>
+        <ul className="mt-6 flex flex-col gap-4">
+          {[
+            "Passed TOEIC, IELTS, or TOEFL with strong scores",
+            "Work in English every single day",
+            "Understand everything — until it's your turn to speak",
+            "Still freeze, stall, or translate silently under pressure",
+          ].map((line, i) => (
+            <li key={i} className="flex items-start gap-3">
+              <span className="mt-2 h-px w-4 bg-muted-foreground/50 shrink-0" />
+              <span className="text-foreground text-base md:text-lg text-pretty leading-relaxed">
+                {line}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* Why I built this — founder story */}
+      <section className="relative z-10 w-full max-w-2xl mx-auto mt-16 border-t border-border pt-16">
+        <span className="text-[10px] font-medium tracking-[0.25em] text-muted-foreground uppercase">
+          Why I built Oggy
+        </span>
+        <div className="flex flex-col gap-4 mt-6 text-base md:text-lg text-pretty leading-relaxed">
+          <p className="text-muted-foreground">
+            I moved to a country where I had to work in English. I&apos;d passed
+            the exams. I&apos;d studied the vocabulary. I knew the grammar.
+          </p>
+          <p className="text-muted-foreground">
+            And I still froze in real conversations. The problem was never
+            knowledge. It was pressure — the gap between what I knew and what I
+            could deliver in the moment.
+          </p>
+          <p className="text-foreground">
+            I couldn&apos;t find a product that trained for that reality. So I
+            started building one. Oggy is the tool I needed and couldn&apos;t
+            buy.
+          </p>
+        </div>
       </section>
 
       {/* What makes it different */}
@@ -106,6 +234,18 @@ export default async function WaitlistPage() {
             </li>
           ))}
         </ul>
+      </section>
+
+      {/* Closing CTA */}
+      <section className="relative z-10 w-full max-w-2xl mx-auto mt-16 border-t border-border pt-16 flex flex-col items-center">
+        <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-center mb-3 text-balance leading-tight">
+          Train the gap. Before it costs you the room.
+        </h2>
+        <p className="text-muted-foreground text-center text-sm md:text-base mb-8 max-w-md text-pretty leading-relaxed">
+          The first 500 get early access and founding price. Beta opens when
+          Sprint 1 passes its quality gate.
+        </p>
+        <WaitlistForm spotsRemaining={spotsRemaining} maxSpots={MAX_SPOTS} />
       </section>
 
       {/* Urgency */}
