@@ -76,18 +76,21 @@ export default async function WaitlistPage() {
         <span className="text-[10px] font-medium tracking-[0.25em] text-muted-foreground uppercase">
           The real problem
         </span>
-        <h2 className="text-2xl md:text-3xl font-bold tracking-tight mt-4 mb-6 text-balance leading-tight">
-          It&apos;s called False Fluency.
+        <h2 className="text-2xl md:text-4xl font-bold tracking-tight mt-4 mb-8 text-balance leading-[1.15]">
+          You already know enough English.
+          <br />
+          <span className="text-muted-foreground">That&apos;s the problem.</span>
         </h2>
-        <div className="flex flex-col gap-4 text-base md:text-lg text-pretty leading-relaxed">
-          <p className="text-muted-foreground">
-            You pass the exams. You know the vocabulary. You understand every
-            word in the meeting.
+        <div className="flex flex-col gap-3 text-lg md:text-xl text-pretty leading-relaxed">
+          <p className="text-foreground">You understand the meeting.</p>
+          <p className="text-foreground">You understand the question.</p>
+          <p className="text-foreground">You even know what you want to say.</p>
+          <p className="text-muted-foreground pt-2">Then pressure arrives.</p>
+          <p className="text-muted-foreground">And your brain stalls.</p>
+          <p className="text-xl md:text-2xl font-semibold text-foreground pt-4">
+            That&apos;s False Fluency.
           </p>
-          <p className="text-muted-foreground">
-            Then someone asks you a question. And everything disappears.
-          </p>
-          <p className="text-foreground">
+          <p className="text-base md:text-lg text-muted-foreground pt-4 leading-relaxed">
             Not because you don&apos;t know English. Because pressure changes
             performance. Oggy measures what happens in that exact moment — and
             trains it until it stops happening.
